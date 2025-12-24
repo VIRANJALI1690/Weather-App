@@ -1,7 +1,7 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url(1.jpg);
+    background-image:url(weather.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #2d3436;
@@ -147,4 +147,5 @@ body {
 }
 section, .container, .main {
     min-height: auto !important;
+
 }
