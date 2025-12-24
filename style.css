@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2d3436;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container */
+.weather-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.app-title {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:White;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.app-description {
+    font-size: 1.1rem;
+    color: #dfe6e9;
+    margin-bottom: 2rem;
+}
+
+/* Form */
+#weather-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0 !important;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #636e72;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+}
+
+/* Weather Display */
+.weather-card {
+    margin-top: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.5s ease-in;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 1rem 0;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0984e3;
+    margin: 0.5rem 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #636e72;
+}
+
+/* Error Message */
+.alert {
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2rem;
+    }
+    .app-description {
+        font-size: 1rem;
+    }
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .temperature {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .weather-container {
+        padding: 10px;
+    }
+    #weather-form {
+        padding: 1.5rem;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+section, .container, .main {
+    min-height: auto !important;
+}

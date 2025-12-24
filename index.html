@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid weather-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <header class="text-center my-4">
+                    <h1 class="app-title">Welcome to Weather App</h1>
+                    <p class="app-description">Check the current weather for any city or location.</p>
+                </header>
+                
+                <form id="weather-form" class="mb-4">
+                    <div class="mb-3">
+                        <label for="location-input" class="form-label">Enter City or Location:</label>
+                        <input type="text" id="location-input" class="form-control" placeholder="e.g., Mumbai" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Get Weather</button>
+                </form>
+                
+                <div id="weather-display" class="weather-card d-none">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="location-name"></h5>
+                            <p class="card-text" id="weather-description"></p>
+                            <h3 class="temperature" id="temperature"></h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="error-message" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
